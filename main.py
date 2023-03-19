@@ -187,7 +187,7 @@ async def edit(bot, update):
     if "/" in link:
         ids = link.split("/")
         try:
-            chat_id = -100 + int(ids[-2])
+            chat_id = -100 + int(ids[-1])
         except ValueError:
             await update.reply_text("Invalid chat ID")
             return
